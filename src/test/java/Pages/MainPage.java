@@ -10,6 +10,9 @@ public class MainPage extends TechHelp {
     @AndroidFindBy(id = "by.onliner.catalog:id/nextContainer")
     private WebElement nextButton;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Перейти')]")
+    private WebElement goToCatalogButton;
+
     public MainPage(WebDriver driver) {
         super(driver);
     }
@@ -18,4 +21,11 @@ public class MainPage extends TechHelp {
         for (int i = 0; i < 5; i++)
             element(nextButton).click();
     }
+
+    public void clickOnGoToCatalogButton() {
+        universalHorizontalSwipe(goToCatalogButton);
+        element(goToCatalogButton).click();
+    }
+
+
 }

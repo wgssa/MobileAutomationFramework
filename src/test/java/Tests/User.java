@@ -1,6 +1,6 @@
 package Tests;
 
-
+import Steps.MobileScreenSteps;
 import Steps.CatalogSteps.CompAndNetworksSteps.KeyboardsSteps;
 import Steps.CatalogSteps.ComputersAndNetworksSteps;
 import Steps.FilterSteps.KeyTypeSteps;
@@ -37,4 +37,7 @@ public class User extends ScenarioSteps {
 
     @Steps
     public SortBySteps atSortByPage;
+
+    @Steps
+    public MobileScreenSteps atMobileScreenPage;
 }

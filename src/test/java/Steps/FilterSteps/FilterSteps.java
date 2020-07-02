@@ -14,10 +14,7 @@ public class FilterSteps extends ScenarioSteps {
     }
 
 
-    @Step
-    public void clickOnNavigateUpButton() {
-        onPage.clickOnNavigateUpButton();
-    }
+
 
     @Step
     public void clickOnMinimalPriceButton() {

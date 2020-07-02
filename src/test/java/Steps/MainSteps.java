@@ -12,4 +12,11 @@ public class MainSteps extends ScenarioSteps {
     public void clickOnNextButton() {
         onPage.clickOnNextButton();
     }
+
+    @Step
+    public void clickOnGoToCatalogButton() {
+        onPage.clickOnGoToCatalogButton();
+    }
+
+
 }

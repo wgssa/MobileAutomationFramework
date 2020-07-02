@@ -9,8 +9,18 @@ public class CatalogSteps extends ScenarioSteps {
     CatalogPage onPage;
 
     @Step
+    public void clickOnNavigateUpButton() {
+        onPage.clickOnNavigateUpButton();
+    }
+
+    @Step
     public void clickOnFoodCatalogButton() {
         onPage.clickOnFoodCatalogButton();
+    }
+
+    @Step
+    public void closeNavigationMenu() {
+        onPage.closeNavigationMenu();
     }
 
     @Step

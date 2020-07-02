@@ -68,7 +68,7 @@ public class TechHelp extends BasePage {
 
         setImplicitTimeout(1, ChronoUnit.SECONDS);
         while (!(isElementDisplayed(element)) && count < 10) {
-            swipeHorizontal(returnAppiumDriver(), 0.8, 0.2, 0.5);
+            swipeHorizontal(returnAppiumDriver(), 0.9, 0.1, 0.5);
             count++;
         }
     }
@@ -78,14 +78,17 @@ public class TechHelp extends BasePage {
         Dimension size = driver.manage().window().getSize();
         int startPoint = (int) (size.width * startPercentage);
         int endPoint = (int) (size.width * finalPercentage);
-
         new TouchAction(driver).longPress(PointOption.point(startPoint, y)).moveTo(PointOption.point(endPoint, y)).release().perform();
     }
 
     public void universalHorizontalSwipeWithinElement(WebElement element) {
         int elemetAnchor = element.getLocation().getY();
         setImplicitTimeout(1, ChronoUnit.SECONDS);
-        swipeHorizontalWithinElement(returnAppiumDriver(), 0.8, 0.2, elemetAnchor);
+        swipeHorizontalWithinElement(returnAppiumDriver(), 0.9, 0.1, elemetAnchor+10);
+    }
+
+    public void hideKeyboard() {
+        returnAppiumDriver().hideKeyboard();
     }
 
     public boolean isElementDisplayed(WebElement element) {

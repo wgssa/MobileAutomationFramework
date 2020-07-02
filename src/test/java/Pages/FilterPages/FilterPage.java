@@ -10,8 +10,7 @@ public class FilterPage extends TechHelp {
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Технология переключателя']")
     private WebElement KeyTypeButton;
-    @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
-    private WebElement navigateUpButton;
+
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[3]")
     private WebElement showFilteredProductsButton;
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Минимальная цена в предложениях магазинов']")
@@ -26,10 +25,6 @@ public class FilterPage extends TechHelp {
     public void clickOnKeyTypeButton() {
         universalVerticalSwipeDown(KeyTypeButton);
         element(KeyTypeButton).click();
-    }
-
-    public void clickOnNavigateUpButton() {
-        element(navigateUpButton).click();
     }
 
     public void clickOnMinimalPriceButton() {

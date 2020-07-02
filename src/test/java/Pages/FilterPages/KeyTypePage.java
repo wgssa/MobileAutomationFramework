@@ -12,6 +12,7 @@ public class KeyTypePage extends TechHelp {
     private WebElement mechanicButton;
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.CheckBox")
     private WebElement mechanicCheckbox;
+
     public KeyTypePage(WebDriver driver) {
         super(driver);
     }

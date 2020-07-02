@@ -13,11 +13,11 @@ public class FiltersTest extends SampleTest {
         user.atFiltersPage.clickOnKeyTypeButton();
         user.atKeyTypePage.clickOnMechanicCheckbox();
         user.atKeyTypePage.verifyMechanicCheckboxIsChecked();
-        user.atFiltersPage.clickOnNavigateUpButton();
+        user.atCatalogPage.clickOnNavigateUpButton();
         user.atFiltersPage.clickOnMinimalPriceButton();
         user.atSortByPricePage.fillMinPriceField("150");
         user.atSortByPricePage.fillMaxPriceField("250");
-        user.atFiltersPage.clickOnNavigateUpButton();
+        user.atCatalogPage.clickOnNavigateUpButton();
         user.atFiltersPage.clickOnSortByButton();
         user.atSortByPage.clickOnCheapFirstRadioButton();
         user.atSortByPage.verifyOnCheapFirstRadioButtonIsChecked();
